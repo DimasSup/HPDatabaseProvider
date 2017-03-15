@@ -142,12 +142,11 @@
 }
 -(void)dealloc
 {
-	dispatch_sync(_operationQueue, ^{
-		
-		[_queue close];
-        _queue = nil;
+	typeof (self) weakSelf = self;
+	dispatch_sync(weakSelf.operationQueue, ^{
+		[weakSelf.dbQueue close];
 	});
-	
+	_queue = nil;
 }
 
 @end
