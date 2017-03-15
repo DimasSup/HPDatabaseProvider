@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HPDatabaseProvider'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of HPDatabaseProvider.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/HPDatabaseProvider'
+  s.homepage         = 'http://hellopal.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DimasSup' => 'dima.teleban@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/HPDatabaseProvider.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://xp-dev.com/git/HPDatabaseProvider', :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FMDB'
 end
