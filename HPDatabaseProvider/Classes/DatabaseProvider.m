@@ -12,14 +12,18 @@
 @synthesize operationQueue = _operationQueue;
 @synthesize dbQueue = _queue;
 @synthesize dbPath = _dbPath;
-
+- (instancetype)initWithQOS:(dispatch_qos_class_t)qosClass
+{
+	self = [super init];
+	if (self) {
+		_operationQueue = dispatch_queue_create( [NSString stringWithFormat:@"%@.dboperationqueue",[NSBundle mainBundle].bundleIdentifier].UTF8String, NULL );
+		dispatch_set_target_queue(_operationQueue, dispatch_get_global_queue(qosClass, 0));
+	}
+	return self;
+}
 - (instancetype)init
 {
-    self = [super init];
-    if (self)
-	{
-        _operationQueue = dispatch_queue_create( [NSString stringWithFormat:@"%@.dboperationqueue",[NSBundle mainBundle].bundleIdentifier].UTF8String, NULL );
-    }
+    self = [self initWithQOS:QOS_CLASS_DEFAULT];
     return self;
 }
 

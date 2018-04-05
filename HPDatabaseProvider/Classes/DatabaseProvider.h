@@ -21,7 +21,7 @@ typedef void (^DatabaseProviderExecuteBlock)(FMDatabase* db);
 @property(nonatomic,readonly)dispatch_queue_t operationQueue;
 @property(nonatomic,readonly)FMDatabaseQueue* dbQueue;
 @property(nonatomic,readonly)NSString* dbPath;
-
+-(instancetype)initWithQOS:(dispatch_qos_class_t)qosClass;
 -(void)createDBByPath:(NSString *)path fromFile:(NSString*)file;
 -(void)performBlockInDB:(DatabaseProviderExecuteBlock)block;
 -(void)performAsyncBlockInDB:(DatabaseProviderExecuteBlock)block;
