@@ -1,0 +1,25 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HPDatabaseProvider (1.0.2):
+    - FMDB
+
+DEPENDENCIES:
+  - HPDatabaseProvider (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
+
+EXTERNAL SOURCES:
+  HPDatabaseProvider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HPDatabaseProvider: 045e08b30823554983fae7cca23ace75a9b74e8e
+
+PODFILE CHECKSUM: f513d0ef8992bf71f7bb222b48ec093c6d3f612a
+
+COCOAPODS: 1.5.3
