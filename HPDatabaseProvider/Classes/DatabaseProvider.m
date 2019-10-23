@@ -130,10 +130,11 @@
 -(void)performBlockInDB:(DatabaseProviderExecuteBlock)block
 {
 	__block DatabaseProviderExecuteBlock callBlock = [block copy];
+	
 	dispatch_sync(_operationQueue, ^{
 		@autoreleasepool
 		{
-			[_queue inDatabase:callBlock];
+			[self->_queue inDatabase:callBlock];
 		}
 	});
 }
@@ -143,7 +144,7 @@
 	dispatch_async(_operationQueue, ^{
 		@autoreleasepool
 		{
-			[_queue inDatabase:callBlock];
+			[self->_queue inDatabase:callBlock];
 		}
 	});
 	

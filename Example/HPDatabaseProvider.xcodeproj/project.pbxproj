@@ -296,7 +296,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/HPDatabaseProvider/HPDatabaseProvider.framework",
 			);
@@ -307,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD422381D308871DE452A65B /* [CP] Check Pods Manifest.lock */ = {

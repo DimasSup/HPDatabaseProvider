@@ -1,21 +1,25 @@
 PODS:
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
-  - HPDatabaseProvider (0.1.0):
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HPDatabaseProvider (1.1.1):
     - FMDB
 
 DEPENDENCIES:
   - HPDatabaseProvider (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FMDB
 
 EXTERNAL SOURCES:
   HPDatabaseProvider:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  HPDatabaseProvider: 16b170e77ede5835a3111803ce8897cc11e9592c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HPDatabaseProvider: 446b02ebc220504058814ba44370b94f55a356a1
 
 PODFILE CHECKSUM: f513d0ef8992bf71f7bb222b48ec093c6d3f612a
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.7.2
