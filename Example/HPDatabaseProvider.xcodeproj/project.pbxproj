@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08E850129E761039403FAD32 /* HPDatabaseProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HPDatabaseProvider.podspec; path = ../HPDatabaseProvider.podspec; sourceTree = "<group>"; };
+		08E850129E761039403FAD32 /* HPDatabaseProvider.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HPDatabaseProvider.podspec; path = ../HPDatabaseProvider.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3B33EBBF64AE91C5C22F80E5 /* Pods-HPDatabaseProvider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPDatabaseProvider_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F4A1EECBC2ED88AF95A4EE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4F86376207540BEF621BA926 /* Pods-HPDatabaseProvider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPDatabaseProvider_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HPDatabaseProvider_Example/Pods-HPDatabaseProvider_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +254,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
