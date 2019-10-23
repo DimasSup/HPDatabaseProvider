@@ -92,12 +92,13 @@
 			
 			
 		}];
+		int endVersion = version;
 		for (NSArray* migration in values)
 		{
 			int migrationVersion = [[migration firstObject] intValue];
 			if(migrationVersion> version)
 			{
-				
+				endVersion = migrationVersion;
 				[_queue inTransaction:^(FMDatabase *db, BOOL *rollback) {
 					for (int  i = 1; i<migration.count; i++)
 					{
@@ -117,6 +118,9 @@
 					[db executeUpdate:@"UPDATE TSystemInfo SET value = ? where key = 'version'" withArgumentsInArray:@[@(migrationVersion)]];
 				}];
 			}
+		}
+		if(self.migrationComplete){
+			self.migrationComplete(version, endVersion);
 		}
 
 	}
