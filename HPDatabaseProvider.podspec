@@ -9,13 +9,13 @@
 Pod::Spec.new do |s|
   s.name             = 'HPDatabaseProvider'
   s.version          = '1.1.2'
-  s.summary          = 'A short description of HPDatabaseProvider.'
+  s.summary          = 'DB helper for your apps   - 1.1.0:\n Added migration callback;'
 
 
 
   s.description      = <<-DESC
-- 1.1.0
-Added migration callback;
+  - 1.1.0
+  Added migration callback;
                        DESC
 
   s.homepage         = 'https://github.com/DimasSup/HPDatabaseProvider'
